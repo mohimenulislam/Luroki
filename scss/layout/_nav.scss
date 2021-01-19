@@ -1,0 +1,28 @@
+.nav_bar {
+    background-color: $primary_color;
+    color: #ffffff;
+    height: 70px;
+    overflow: hidden;
+    h1 {
+        font-weight: 300;
+    }
+}
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    ul {
+        display: flex;
+    }
+    a {
+        color: #ffffff;
+        margin: 0 5px;
+        padding: 10px;
+        transition: 0.3s;
+        font-weight: 300;
+        &:hover {
+            border-bottom: 2px #ffffff solid;
+        }
+    }
+}

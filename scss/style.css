@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.nav_bar {
+  background-color: #047aed;
+  color: #ffffff;
+  height: 70px;
+  overflow: hidden;
+}
+
+.nav_bar h1 {
+  font-weight: 300;
+}
+
+.flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.flex_container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex_container a {
+  color: #ffffff;
+  margin: 0 5px;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 300;
+}
+
+.flex_container a:hover {
+  border-bottom: 2px #ffffff solid;
+}
+
+.banner {
+  height: 400px;
+  background-color: #047aed;
+  color: #ffffff;
+  position: relative;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+}
+
+.banner_text h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.banner_text p {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.banner_text a {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 30px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.grid_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+}
+
+.card h2 {
+  font-weight: 300;
+}
+
+.banner-form {
+  position: relative;
+  top: 60px;
+  height: 270px;
+  width: 320px;
+  padding: 40px;
+  z-index: 100;
+}
+
+.banner-form .form-control {
+  margin: 30px 0;
+}
+
+.banner-form .form-control input[type="text"], .banner-form .form-control input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.banner-form .form-control input[type="text"]:focus, .banner-form .form-control input[type="email"]:focus {
+  outline: none;
+}
+
+.banner-form .simple_button {
+  padding: 10px 30px;
+  background-color: #047aed;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status {
+  padding-top: 100px;
+}
+
+.status_heading {
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 300;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.status_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.status_grid h3 {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.status_grid p {
+  margin: 10px 0;
+  font-size: 20px;
+  font-size: bold;
+}
+
+.cli .cli-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.cli .cli-grid > *:first-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/ span 2;
+}
+
+.cli .cli-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
