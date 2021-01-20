@@ -23,6 +23,11 @@
     text-align: center;
     margin: 18px 10px 40px;
     transition: transform 0.2s ease-in;
+    h4 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 300;
+    }
     &:hover {
         transform: translateY(-15px);
     }
