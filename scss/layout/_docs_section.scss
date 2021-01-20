@@ -1,0 +1,86 @@
+.docs {
+    padding: 2rem 0;
+    background-color: $primary_color;
+    color: #ffffff;
+    .docs-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        img {
+            width: 200px;
+            justify-self: flex-end;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            margin: 10px 0;
+        }
+        p {
+            font-weight: 300;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+    }
+    
+}
+
+.main-docs {
+    margin: 3rem 0;
+    .main_docs_grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .small_card {
+            background-color: #F4F4F4;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 10px;
+            h3 {
+                margin: 20px 0;
+                font-weight: 300
+            }
+            ul {
+                li {
+                    font-weight: 300    ;
+                    font-size: 17px;
+                    padding-bottom: 5px;
+                    margin-bottom: 5px;
+                    border-bottom: 1px #ccc solid;
+                }
+            }
+        }
+        .big_card {
+            background-color: #ffffff;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 10px;
+            h2 {
+
+            }
+            p {
+
+            }
+            .alert {
+                display: flex;
+                padding: 10px 20px;
+                font-weight: bold;
+                margin: 15px 0;
+                color: #fff;
+                background-color: #5CB85C;
+                p {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
